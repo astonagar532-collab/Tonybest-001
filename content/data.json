@@ -1,0 +1,323 @@
+{
+  "site_name": "Travel & Destinations",
+  "tagline": "Plan smart. Spend less. See more.",
+  "scope": "Any destination",
+  "base_currency": "USD",
+  "currency_note": "All prices are shown in USD and converted at the rates below. Check the live rate before you travel.",
+  "rates": {
+    "USD": 1,
+    "EUR": 0.92,
+    "GBP": 0.79,
+    "INR": 83.5,
+    "JPY": 152,
+    "AUD": 1.52
+  },
+  "budget_buffer": 0.1,
+  "last_updated": "2026-10-01",
+  "tiers": {
+    "Shoestring": { "usd": 30, "eur": 28, "inr": 2500 },
+    "Budget": { "usd": 55, "eur": 51, "inr": 4500 },
+    "Mid": { "usd": 110, "eur": 101, "inr": 9000 },
+    "Comfort": { "usd": 210, "eur": 193, "inr": 17000 }
+  },
+  "vibes": ["central", "old-town", "coastal", "quiet", "nightlife", "airport-side"],
+  "areas": [
+    {
+      "destination": "Southeast Asia",
+      "name": "Old Quarter",
+      "vibe": "old-town",
+      "avg_nightly_usd": 28,
+      "pros": ["walkable", "street food", "night markets"],
+      "cons": ["noisy at night", "thin walls"]
+    },
+    {
+      "destination": "Southeast Asia",
+      "name": "Riverside District",
+      "vibe": "coastal",
+      "avg_nightly_usd": 42,
+      "pros": ["river views", "cafes", "cool evenings"],
+      "cons": ["mosquitoes", "pricier on weekends"]
+    },
+    {
+      "destination": "Southern Europe",
+      "name": "Central Station Quarter",
+      "vibe": "central",
+      "avg_nightly_usd": 95,
+      "pros": ["rail links", "museums nearby", "easy onward travel"],
+      "cons": ["tourist pricing", "busier streets"]
+    },
+    {
+      "destination": "Southern Europe",
+      "name": "Arts & Market Hills",
+      "vibe": "nightlife",
+      "avg_nightly_usd": 68,
+      "pros": ["bars", "independent shops", "lively"],
+      "cons": ["late noise", "limited quiet hours"]
+    },
+    {
+      "destination": "North America",
+      "name": "Lakeside Suburb",
+      "vibe": "quiet",
+      "avg_nightly_usd": 110,
+      "pros": ["calm streets", "park access", "family friendly"],
+      "cons": ["needs transit to centre", "higher car costs"]
+    },
+    {
+      "destination": "North America",
+      "name": "Airport Corridor",
+      "vibe": "airport-side",
+      "avg_nightly_usd": 75,
+      "pros": ["short transfers", "early flights easy"],
+      "cons": ["little to do on foot", "inconvenient for sightseeing"]
+    },
+    {
+      "destination": "North Africa",
+      "name": "Medina Edge",
+      "vibe": "old-town",
+      "avg_nightly_usd": 35,
+      "pros": ["maze of lanes", "rooftop views"],
+      "cons": ["hard to navigate", "limited nightlife"]
+    },
+    {
+      "destination": "East Africa",
+      "name": "Garden Town",
+      "vibe": "quiet",
+      "avg_nightly_usd": 52,
+      "pros": ["greenery", "low prices", "friendly locals"],
+      "cons": ["fewer late flights", "patchy internet"]
+    }
+  ],
+  "transport": {
+    "airport_transfer": [
+      {
+        "destination": "Most cities",
+        "mode": "Airport rail link",
+        "time_min": 15,
+        "cost_usd": 8,
+        "notes": "fastest option; runs on a fixed timetable"
+      },
+      {
+        "destination": "Most cities",
+        "mode": "Scheduled bus",
+        "time_min": 40,
+        "cost_usd": 4,
+        "notes": "cheapest daytime option; can be slow in traffic"
+      },
+      {
+        "destination": "Most cities",
+        "mode": "Official taxi or ride-hail",
+        "time_min": 25,
+        "cost_usd": 30,
+        "notes": "price varies by surge, time and baggage"
+      },
+      {
+        "destination": "Small or remote towns",
+        "mode": "Shared shuttle or pre-booked van",
+        "time_min": 75,
+        "cost_usd": 20,
+        "notes": "often the only reliable option; book ahead"
+      }
+    ],
+    "local": {
+      "modes": ["metro", "bus", "tram", "ferry", "shared taxi"],
+      "single_fare_usd": 2,
+      "daily_cap_usd": 8,
+      "service_note": "Tap in and out where required. Off-peak fares are usually cheaper."
+    },
+    "routes": [
+      {
+        "from": "Old Quarter",
+        "to": "Riverside District",
+        "best_mode": "bus",
+        "time_min": 25,
+        "cost_usd": 1.5
+      },
+      {
+        "from": "Central Station Quarter",
+        "to": "Arts & Market Hills",
+        "best_mode": "tram",
+        "time_min": 12,
+        "cost_usd": 2
+      }
+    ]
+  },
+  "attractions": [
+    {
+      "name": "City walking loop",
+      "kind": "outdoors",
+      "price_usd": 0,
+      "best_time": "early morning",
+      "free_day": "always",
+      "notes": "Start at first light for soft light and empty streets"
+    },
+    {
+      "name": "National museum",
+      "kind": "culture",
+      "price_usd": 6,
+      "best_time": "weekday",
+      "free_day": "first Sunday of the month",
+      "notes": "Many museums are free on public holidays"
+    },
+    {
+      "name": "Public gardens and parks",
+      "kind": "outdoors",
+      "price_usd": 0,
+      "best_time": "late afternoon",
+      "free_day": "daily",
+      "notes": "Shade, benches and toilets make this a good rest stop"
+    },
+    {
+      "name": "Guided food market tour",
+      "kind": "food",
+      "price_usd": 25,
+      "best_time": "morning",
+      "free_day": "",
+      "notes": "Book ahead; tours sell out on weekends"
+    },
+    {
+      "name": "Sunset viewpoint",
+      "kind": "outdoors",
+      "price_usd": 4,
+      "best_time": "one hour before sunset",
+      "free_day": "",
+      "notes": "Arrive 45 minutes early in peak season"
+    }
+  ],
+  "food": [
+    {
+      "dish": "Local street staple",
+      "where": "market stall",
+      "cost_usd": 3,
+      "hygiene_tip": "Busy stalls turn food over faster"
+    },
+    {
+      "dish": "Daily set lunch",
+      "where": "small local cafe",
+      "cost_usd": 7,
+      "hygiene_tip": "Look for a high customer turnover"
+    },
+    {
+      "dish": "Night-market snack",
+      "where": "evening market",
+      "cost_usd": 2,
+      "hygiene_tip": "Choose stalls cooking in front of you"
+    },
+    {
+      "dish": "Filtered coffee or tea",
+      "where": "any cafe",
+      "cost_usd": 2.5,
+      "hygiene_tip": "Refill stations beat single-use cups"
+    }
+  ],
+  "itineraries": {
+    "48h": [
+      {
+        "time": "09:00",
+        "place": "Neighbourhood walk to orient yourself",
+        "cost_usd": 0,
+        "note": "note landmarks for later days"
+      },
+      {
+        "time": "11:00",
+        "place": "Local museum or gallery",
+        "cost_usd": 6,
+        "note": "check for free entry days first"
+      },
+      {
+        "time": "14:00",
+        "place": "Market lunch and people watching",
+        "cost_usd": 7,
+        "note": "cash helps at small stalls"
+      },
+      {
+        "time": "17:00",
+        "place": "Riverside or waterfront walk",
+        "cost_usd": 0,
+        "note": "best light before dinner"
+      },
+      {
+        "time": "20:00",
+        "place": "Night market or casual local dining",
+        "cost_usd": 10,
+        "note": "ask what is in season"
+      }
+    ]
+  },
+  "safety": {
+    "scams": [
+      "Overpriced tours sold at the arrival gate",
+      "Unlicensed taxi drivers who quote a fake meter rate",
+      "Distressed visitors asking for help with a card machine",
+      "Fake ATMs that keep the card or charge a hidden fee"
+    ],
+    "emergency_note": "Save the local emergency number for every country on your route before you fly. Many places also list a tourist police line.",
+    "etiquette": [
+      "Queue politely, even when nobody else does",
+      "Tap in and out of transit every time",
+      "Cover shoulders and knees at religious sites",
+      "Ask before photographing people or ceremonies"
+    ]
+  },
+  "faq": [
+    {
+      "q": "Is tap water safe everywhere?",
+      "a": "In most major cities, yes. In some countries it is bottled only, so check before you drink. Carry a refillable bottle and use refill stations."
+    },
+    {
+      "q": "Cash or card?",
+      "a": "Cards and contactless are widely accepted in cities. Keep small local notes for markets, tips and rural transport."
+    },
+    {
+      "q": "How much cash should I carry?",
+      "a": "Enough for one or two days, not more. Use bank ATMs inside branches, decline the machine's own currency conversion, and split cash across two places."
+    },
+    {
+      "q": "Is a travel eSIM or a local SIM better?",
+      "a": "An eSIM works before you land and needs no shop visit. A local SIM is often cheaper per gigabyte. Compare both against your trip length and data needs."
+    },
+    {
+      "q": "Do I need a local SIM to use my phone abroad?",
+      "a": "Only if your plan does not include roaming. Data roaming can cost many times more than a local or eSIM plan."
+    },
+    {
+      "q": "How early should I book flights?",
+      "a": "Book 4 to 8 weeks ahead for most routes. Peak holidays and long-haul flights get expensive much earlier; check the local school holiday calendar first."
+    },
+    {
+      "q": "What is the cheapest way to get from the airport?",
+      "a": "Usually the scheduled airport bus or the rail link. Compare the total door-to-door time, not just the ticket price, and check when the last service runs."
+    },
+    {
+      "q": "Do I need travel insurance?",
+      "a": "Yes. Cover medical treatment, trip cancellation and lost luggage, and check that your destination has adequate healthcare before you rely on it."
+    },
+    {
+      "q": "How do I avoid jet lag?",
+      "a": "Shift your sleep by 1 to 2 hours per day before you fly, eat on the destination's schedule once you land, and get daylight early."
+    },
+    {
+      "q": "What vaccinations or health checks do I need?",
+      "a": "Requirements change. Check your government's travel health site and a clinic 4 to 8 weeks before departure."
+    },
+    {
+      "q": "Is tipping expected?",
+      "a": "It depends on the country. Some places add a service charge; others round up or tip in cash. Check local norms and never tip if a menu says service is included."
+    },
+    {
+      "q": "How do I get around at night when public transport has stopped?",
+      "a": "Plan a backup before you need one: an official taxi number, a ride-hail app that works there, or your hotel's shuttle. Agree the price before you set off."
+    },
+    {
+      "q": "Should I book accommodation before I arrive?",
+      "a": "Yes for the first night, and for the whole trip in peak season or during events. Free cancellation is the safest option."
+    },
+    {
+      "q": "How do I find free things to do?",
+      "a": "Look for free museum days, public parks, walking routes, viewpoints and community events. City tourism offices publish a free-events calendar."
+    },
+    {
+      "q": "What documents should I carry?",
+      "a": "Passport with 6+ months validity, visa or entry permit where required, insurance details, and offline copies of every booking. Keep a digital and a paper copy."
+    }
+  ]
+}

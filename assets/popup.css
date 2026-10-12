@@ -1,0 +1,27 @@
+/* Policy notice dialog — loaded after styles.css on index.html and lander.html,
+   so it must not redefine .btn colours the brand already owns. */
+
+.modal-backdrop{
+  position:fixed; inset:0; display:none;
+  align-items:center; justify-content:center;
+  padding:var(--space,16px);
+  background:rgba(0,0,0,.55); z-index:9999;
+}
+.modal-backdrop.fade-out{opacity:0;transition:opacity 180ms ease}
+
+.modal{
+  background:#fff; color:#111827; width:100%; max-width:420px;
+  padding:24px 28px; border-radius:14px;
+  box-shadow:0 8px 30px rgba(0,0,0,.25);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; text-align:center;
+}
+.modal h3{margin:0 0 10px; font-size:1.25rem; color:#111827;}
+.modal p{margin:0 0 18px; color:#374151; line-height:1.6; font-size:.95rem;}
+
+.modal-actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap;}
+.modal-actions .btn{flex:1 1 auto; min-width:130px; border-radius:8px;}
+.modal-actions .btn.ghost{background:transparent; color:var(--brand,#0e7c86); border-color:var(--brand,#0e7c86);}
+
+@media (prefers-reduced-motion: reduce){
+  .modal-backdrop.fade-out{transition:none}
+}

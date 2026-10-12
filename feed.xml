@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>Travel &amp; Destinations Updates &amp; Tips</title><link>index.html</link>
+<description>Latest notes and price updates</description><lastBuildDate>2026-10-01</lastBuildDate>
+<item><title>Pricing refresh and currency rebase</title><link>costs.html</link><pubDate>2026-10-01</pubDate><description>Budget tiers rebased to USD and extended with a generic area picker, transport and itinerary data.</description></item>
+<item><title>Destination-neutral rewrite</title><link>start-here.html</link><pubDate>2026-10-01</pubDate><description>All pages rewritten so the guidance applies to any destination rather than one country.</description></item>
+</channel></rss>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility Notes — Travel &amp; Destinations</title>
+<meta name="description" content="Step-free access, sensory notes and practical planning for calmer, more accessible travel.">
+<link rel="preload" href="assets/styles.css" as="style">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/site.js"></script>
+<meta name="theme-color" content="#0e7c86">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container row between center">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="currentColor" opacity=".12"/>
+        <path d="M16 36c8-6 24-6 32 0l-4 4c-6-4-18-4-24 0l-4-4z" fill="currentColor"/>
+        <circle cx="32" cy="26" r="5" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">Travel &amp; Destinations</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul id="nav-list">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="itineraries.html">Itineraries</a></li>
+        <li><a href="costs.html" class="btn small">Build my budget plan</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="contact-meta" role="note">
+    Sample contact details &mdash; replace before publishing: <a href="mailto:hello@traveldestinations.example">hello@traveldestinations.example</a>
+  </div>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Accessibility</li></ol></nav>
+<main id="main" class="container">
+
+<h1>Accessibility notes</h1>
+<p class="lead">Accessibility varies enormously between destinations, and often between neighbourhoods in the same city. Plan for the weakest link in your route &mdash; usually the station, the airport or an old building &mdash; rather than assuming the whole trip works.</p>
+
+<section class="card">
+  <h2>Before you book</h2>
+  <ul class="checklist">
+    <li>Contact the operator directly about step-free access, lift reliability and boarding assistance.</li>
+    <li>Ask an accommodation provider about step-free entrances, bathroom dimensions and bed height &mdash; not just &ldquo;accessible room&rdquo;.</li>
+   <li>Check whether the attraction has an accessible route, and whether a staff member must accompany you.</li>
+    <li>Plan for longer transfer times: accessible routes often add 10&ndash;20 minutes per journey.</li>
+    <li>Book assistance 48&ndash;72 hours ahead where required, and confirm by email.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Public transport</h2>
+  <ul class="checklist">
+    <li>Most metro and major bus interchanges have step-free access and priority seating &mdash; verify lift status on the operator&rsquo;s site before travel.</li>
+    <li>Low-floor buses and trams are common but not universal; some routes only use high-floor vehicles.</li>
+    <li>Tactile paving and audible announcements vary widely. Expect them in some cities and not at all in others.</li>
+    <li>Taxis and ride-hailing are the most reliable fallback; request a wheelchair-accessible vehicle in advance where possible.</li>
+    <li>Keep power banks to hand &mdash; many stations have long walks and few places to charge.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Attractions and heritage sites</h2>
+  <ul class="checklist">
+    <li>Old towns often have cobbles, stairs and narrow lanes with no step-free alternative &mdash; ask for the specific accessible entrance.</li>
+    <li>Ask about quiet rooms, sensory-friendly hours, or lower-capacity visiting times.</li>
+    <li>Check step counts, lift dimensions and the maximum door width for anything you need to get through.</li>
+    <li>Reserve wheelchairs or mobility scooters where they are offered, and do it early in peak season.</li>
+    <li>Carry a printable version of your itinerary; signal reliability varies.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Sensory and communication</h2>
+  <ul class="checklist">
+    <li>Carry earplugs or a noise-cancelling headset &mdash; the best-planned days are still loud in many cities.</li>
+    <li>Request a quiet room away from lifts, corridors and any club or bar in the building.</li>
+    <li>Pack a card with key phrases in the local language, plus your allergy or medical needs.</li>
+    <li>Ask hotels and restaurants about staff training; it varies more than you would expect.</li>
+    <li>Use the site&rsquo;s own accessibility notes and operator information rather than relying on traveller reviews alone.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Typical daily budget by tier</h2>
+  <div class="tabs" role="tablist" aria-label="Budget tiers">
+    <button role="tab" aria-selected="true" aria-controls="tab-ss" id="tabbtn-ss">Shoestring</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-bu" id="tabbtn-bu">Budget</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-mi" id="tabbtn-mi">Mid</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-co" id="tabbtn-co">Comfort</button>
+  </div>
+  <div id="tab-ss" role="tabpanel" aria-labelledby="tabbtn-ss">
+    <table class="striped">
+      <thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Shoestring.usd">30</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Shoestring.eur">28</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Shoestring.inr">2,500</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-bu" role="tabpanel" aria-labelledby="tabbtn-bu" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Budget.usd">55</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Budget.eur">51</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Budget.inr">4,500</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-mi" role="tabpanel" aria-labelledby="tabbtn-mi" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Mid.usd">110</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Mid.eur">101</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Mid.inr">9,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-co" role="tabpanel" aria-labelledby="tabbtn-co" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Comfort.usd">210</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Comfort.eur">193</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Comfort.inr">17,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Base currency is USD; other figures are converted for convenience. Prices are indicative &mdash; confirm on the provider&rsquo;s site. Last updated <span data-bind="last_updated">2026-10-01</span>.</p>
+</section>
+
+<section class="card">
+  <h2>Quick checklist</h2>
+  <ul class="checklist">
+    <li>Call ahead and confirm assistance is actually arranged</li>
+    <li>Plan shorter days with real rest breaks</li>
+    <li>Carry a printed plan and your confirmation references</li>
+    <li>Allow extra time at every transfer point</li>
+  </ul>
+</section>
+
+<section class="notice info">
+  <h3>How to book this</h3>
+  <ol class="compact">
+    <li>Shortlist 2&ndash;3 options with free cancellation.</li>
+    <li>Check area noise, late check-in and luggage rules.</li>
+    <li>Compare refundable vs. non-refundable totals, including fees.</li>
+    <li>Save the confirmation offline and set a cancellation reminder.</li>
+  </ol>
+  <p><a class="btn small" href="how-to-book.html">See full booking steps</a></p>
+</section>
+
+<p class="related">Related: <a href="stay.html">Stay</a> &bull; <a href="transport.html">Transport</a> &bull; <a href="safety.html">Safety</a></p>
+
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container grid four">
+    <section>
+      <h3>Travel &amp; Destinations</h3>
+      <p class="tagline">Plan smart. Spend less. See more.</p>
+      <p><strong>Coverage:</strong> Any destination<br>
+      <strong>Base currency:</strong> USD</p>
+    </section>
+    <section>
+      <h4>Explore</h4>
+      <ul class="list">
+        <li><a href="stay.html">Where to Stay</a></li>
+        <li><a href="transport.html">Getting Around</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a href="food.html">Food &amp; Markets</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Plan</h4>
+      <ul class="list">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="itineraries.html">Itineraries</a></li>
+        <li><a href="costs.html">Budget Calculator</a></li>
+        <li><a href="how-to-book.html">How to Book</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Practical &amp; Legal</h4>
+      <ul class="list">
+        <li><a href="safety.html">Safety &amp; Etiquette</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="container small">&copy; 2026 Travel &amp; Destinations. Content is informational and not travel advice. Prices shown are indicative (last updated <span data-bind="last_updated">2026-10-01</span>).</div>
+</footer>
+</body>
+</html>

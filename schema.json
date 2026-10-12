@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Travel & Destinations",
+      "url": "index.html",
+      "inLanguage": "en",
+      "description": "Destination-agnostic planning help for affordable trips — areas to stay, transport, costs, food, safety and itineraries.",
+      "image": "assets/placeholder-hero.jpg",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Travel & Destinations",
+        "url": "index.html",
+        "email": "hello@traveldestinations.example",
+        "description": "Independent travel planning guide."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Cash or card?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cards and contactless are widely accepted in cities. Keep small local notes for markets, tips and rural transport."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a travel eSIM or a local SIM better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An eSIM works before you land and needs no shop visit. A local SIM is often cheaper per gigabyte. Compare both against your trip length and data needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cheapest way to get from the airport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually the scheduled airport bus or the rail link. Compare total door-to-door time, not just the ticket price, and check when the last service runs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need travel insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Cover medical treatment, trip cancellation and lost luggage, and check that your destination has adequate healthcare before you rely on it."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safety &amp; Etiquette — Travel &amp; Destinations</title>
+<meta name="description" content="Destination-neutral safety basics: common travel scams, emergency preparation and local etiquette.">
+<link rel="preload" href="assets/styles.css" as="style">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/site.js"></script>
+<meta name="theme-color" content="#0e7c86">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container row between center">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="currentColor" opacity=".12"/>
+        <path d="M16 36c8-6 24-6 32 0l-4 4c-6-4-18-4-24 0l-4-4z" fill="currentColor"/>
+        <circle cx="32" cy="26" r="5" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">Travel &amp; Destinations</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul id="nav-list">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="itineraries.html">Itineraries</a></li>
+        <li><a href="costs.html" class="btn small">Build my budget plan</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="contact-meta" role="note">
+    Sample contact details &mdash; replace before publishing: <a href="mailto:hello@traveldestinations.example">hello@traveldestinations.example</a>
+  </div>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Safety &amp; Etiquette</li></ol></nav>
+<main id="main" class="container">
+
+<h1>Safety and etiquette</h1>
+<p class="lead">Almost every travel problem comes from a handful of predictable situations. Learn the local rules before you arrive and most of them stop being problems.</p>
+
+<section class="notice">
+  <h3>Before you travel</h3>
+  <p id="emergencyNote">Save the local emergency number for every country on your route before you fly. Many places also list a tourist police line.</p>
+  <ul class="checklist">
+    <li>Store your embassy or consulate contact details offline.</li>
+    <li>Share your itinerary with someone who is not travelling with you.</li>
+    <li>Keep passport copies, insurance details and booking references in two places.</li>
+    <li>Know where the nearest hospital or clinic to your accommodation is.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Common scams</h2>
+  <ul class="checklist" id="safetyList"></ul>
+  <p class="small">A general list rather than a destination-specific one. Search your destination plus &ldquo;tourist scam&rdquo; before you travel for local variations.</p>
+</section>
+
+<section class="card">
+  <h2>Habits that remove most risk</h2>
+  <ul class="checklist">
+    <li>Use licensed transport or a well-established ride-hailing app; agree the price first.</li>
+    <li>Buy tickets from official counters, official apps or authorised resellers only.</li>
+    <li>Carry a card and a separate small amount of cash, in different places.</li>
+    <li>Keep your phone charged and install offline maps before you go out at night.</li>
+    <li>Watch local flag and beach warning systems rather than assuming they mean what you expect.</li>
+    <li>Walk in well-lit, populated streets at night, especially for the first few nights in a new city.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Etiquette that gets you a better reception</h2>
+  <ul class="checklist" id="etiquetteList"></ul>
+  <p class="small">Etiquette varies widely. When in doubt, watch what local people do first, and expect &ldquo;no problem&rdquo; or a smile to mean yes rather than no.</p>
+</section>
+
+<section class="card">
+  <h2>Typical daily budget by tier</h2>
+  <div class="tabs" role="tablist" aria-label="Budget tiers">
+    <button role="tab" aria-selected="true" aria-controls="tab-ss" id="tabbtn-ss">Shoestring</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-bu" id="tabbtn-bu">Budget</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-mi" id="tabbtn-mi">Mid</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-co" id="tabbtn-co">Comfort</button>
+  </div>
+  <div id="tab-ss" role="tabpanel" aria-labelledby="tabbtn-ss">
+    <table class="striped">
+      <thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Shoestring.usd">30</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Shoestring.eur">28</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Shoestring.inr">2,500</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-bu" role="tabpanel" aria-labelledby="tabbtn-bu" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Budget.usd">55</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Budget.eur">51</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Budget.inr">4,500</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-mi" role="tabpanel" aria-labelledby="tabbtn-mi" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Mid.usd">110</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Mid.eur">101</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Mid.inr">9,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-co" role="tabpanel" aria-labelledby="tabbtn-co" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td data-bind="tier.Comfort.usd">210</td></tr>
+        <tr><td>EUR</td><td data-bind="tier.Comfort.eur">193</td></tr>
+        <tr><td>INR</td><td data-bind="tier.Comfort.inr">17,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Base currency is USD; other figures are converted for convenience. Prices are indicative &mdash; confirm on the provider&rsquo;s site. Last updated <span data-bind="last_updated">2026-10-01</span>.</p>
+</section>
+
+<section class="card">
+  <h2>Quick checklist</h2>
+  <ul class="checklist">
+    <li>Share your itinerary and accommodation details with a friend at home</li>
+    <li>Keep copies of IDs and the insurance policy number offline</li>
+    <li>Save the local emergency number in your phone, not just in your notes app</li>
+    <li>Check weather warnings and local alerts each morning</li>
+  </ul>
+</section>
+
+<section class="notice info">
+  <h3>How to book this</h3>
+  <ol class="compact">
+    <li>Shortlist 2&ndash;3 options with free cancellation.</li>
+    <li>Check area noise, late check-in and luggage rules.</li>
+    <li>Compare refundable vs. non-refundable totals, including fees.</li>
+    <li>Save the confirmation offline and set a cancellation reminder.</li>
+  </ol>
+  <p><a class="btn small" href="how-to-book.html">See full booking steps</a></p>
+</section>
+
+<p class="related">Related: <a href="start-here.html">Start Here</a> &bull; <a href="transport.html">Transport</a> &bull; <a href="accessibility.html">Accessibility</a></p>
+
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container grid four">
+    <section>
+      <h3>Travel &amp; Destinations</h3>
+      <p class="tagline">Plan smart. Spend less. See more.</p>
+      <p><strong>Coverage:</strong> Any destination<br>
+      <strong>Base currency:</strong> USD</p>
+    </section>
+    <section>
+      <h4>Explore</h4>
+      <ul class="list">
+        <li><a href="stay.html">Where to Stay</a></li>
+        <li><a href="transport.html">Getting Around</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a href="food.html">Food &amp; Markets</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Plan</h4>
+      <ul class="list">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="itineraries.html">Itineraries</a></li>
+        <li><a href="costs.html">Budget Calculator</a></li>
+        <li><a href="how-to-book.html">How to Book</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Practical &amp; Legal</h4>
+      <ul class="list">
+        <li><a href="safety.html">Safety &amp; Etiquette</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="container small">&copy; 2026 Travel &amp; Destinations. Content is informational and not travel advice. Prices shown are indicative (last updated <span data-bind="last_updated">2026-10-01</span>).</div>
+</footer>
+</body>
+</html>
